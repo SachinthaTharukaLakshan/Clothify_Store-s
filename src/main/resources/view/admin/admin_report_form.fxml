@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.admin.AdminReportFormController">
+   <top>
+      <AnchorPane prefHeight="75.0" prefWidth="1030.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+         <Text layoutX="75.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" wrappingWidth="289.51171875" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="13.15234375">
+            <font>
+               <Font name="System Bold Italic" size="36.0" />
+            </font>
+         </Text>
+         <ImageView fitHeight="62.0" fitWidth="73.0" layoutX="220.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="748.4000000000001" AnchorPane.topAnchor="6.0">
+            <Image url="@../../img/admin/dashboard/Male User Icon.png" />
+         </ImageView>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="695.0" prefWidth="1030.0" BorderPane.alignment="CENTER">
+         <Text layoutX="674.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" AnchorPane.leftAnchor="674.0" AnchorPane.topAnchor="11.734375">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <Text fx:id="txtDate" layoutX="729.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="06-10-2024" AnchorPane.topAnchor="12.734375">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <Text layoutX="832.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :" AnchorPane.topAnchor="12.734375">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <Text fx:id="txtTime" layoutX="888.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="04:12:43" AnchorPane.rightAnchor="83.71250000000009" AnchorPane.topAnchor="12.734375">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <JFXButton layoutX="44.0" layoutY="57.0" onAction="#btnGetDailyReport" prefHeight="35.0" prefWidth="170.0" ripplerFill="#feff0066" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Get Daily Report" AnchorPane.rightAnchor="816.0000000000001" AnchorPane.topAnchor="57.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <JFXButton layoutX="283.0" layoutY="57.0" onAction="#btnGetMonthlyReports" prefHeight="35.0" prefWidth="170.0" ripplerFill="#ffff0066" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Get Monthly Report" AnchorPane.rightAnchor="577.0000000000001" AnchorPane.topAnchor="57.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <JFXButton layoutX="524.0" layoutY="57.0" onAction="#btnGetAnnualReports" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Get Annual Report" AnchorPane.rightAnchor="336.0000000000001" AnchorPane.topAnchor="57.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <JFXButton layoutX="747.0" layoutY="57.0" onAction="#btnDailyReturns" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Daily Returns" AnchorPane.rightAnchor="113.00000000000011" AnchorPane.topAnchor="57.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <LineChart fx:id="chart" layoutX="454.0" layoutY="154.0" prefHeight="347.0" prefWidth="549.0" AnchorPane.bottomAnchor="194.00000000000006" AnchorPane.leftAnchor="454.0" AnchorPane.rightAnchor="27.0">
+            <xAxis>
+               <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+               <NumberAxis side="LEFT" />
+            </yAxis>
+         </LineChart>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f6ff0066" height="318.0" layoutX="20.0" layoutY="162.0" stroke="WHITE" strokeType="INSIDE" width="390.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="162.0" />
+         <Text layoutX="94.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" AnchorPane.leftAnchor="94.0" AnchorPane.topAnchor="234.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <DatePicker fx:id="date" layoutX="212.0" layoutY="241.0" AnchorPane.leftAnchor="212.0" AnchorPane.topAnchor="241.0" />
+         <Text layoutX="49.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Count :" AnchorPane.leftAnchor="49.0" AnchorPane.topAnchor="281.576171875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Text layoutX="91.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales  :" AnchorPane.leftAnchor="91.0" AnchorPane.topAnchor="334.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Label fx:id="lblSalesCount" alignment="CENTER" layoutX="221.0" layoutY="277.0" prefHeight="33.0" prefWidth="157.0" text="450" textAlignment="CENTER" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="277.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="lblSales" alignment="CENTER" layoutX="221.0" layoutY="331.0" prefHeight="33.0" prefWidth="157.0" text="450" textAlignment="CENTER" AnchorPane.leftAnchor="221.0" AnchorPane.topAnchor="331.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </center>
+</BorderPane>

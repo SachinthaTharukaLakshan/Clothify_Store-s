@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="770.0" maxWidth="1280.0" minHeight="770.0" minWidth="1280.0" prefHeight="770.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.LoginFormController">
+   <AnchorPane layoutX="88.0" layoutY="44.0" prefHeight="682.0" prefWidth="1154.0" style="-fx-background-color: black; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="44.0">
+      <AnchorPane layoutX="93.0" layoutY="49.0" prefHeight="572.0" prefWidth="504.0" style="-fx-background-color: yellow; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="61.0" AnchorPane.rightAnchor="557.0" AnchorPane.topAnchor="49.0">
+         <Text layoutX="158.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+            <font>
+               <Font name="Apple Chancery" size="58.0" />
+            </font>
+         </Text>
+         <JFXTextField fx:id="txtUserName" focusColor="#9eb9c4" layoutX="66.0" layoutY="204.0" prefHeight="50.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 38px;" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="66.0">
+            <padding>
+               <Insets left="25.0" right="25.0" />
+            </padding>
+            <font>
+               <Font size="16.0" />
+            </font>
+         </JFXTextField>
+         <Text layoutX="90.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="325.3349609375">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Text layoutX="90.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" AnchorPane.leftAnchor="90.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <JFXButton fx:id="btnSignIn" layoutX="187.0" layoutY="488.0" onAction="#btnSignInOnAction" prefHeight="55.0" prefWidth="145.0" style="-fx-background-color: #0E0E0E; -fx-background-radius: 38px;" text="Sign In" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </JFXButton>
+         <Text fx:id="txtFogotPassword" layoutX="270.0" layoutY="444.0" onMouseClicked="#txtFogotPasswordOnMouseClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Fogot Password ?" textAlignment="CENTER" underline="true">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <JFXPasswordField fx:id="txtPassword" layoutX="66.0" layoutY="331.0" prefHeight="50.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 38px;" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="66.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <padding>
+               <Insets left="25.0" right="25.0" />
+            </padding>
+         </JFXPasswordField>
+      </AnchorPane>
+      <ParallelCamera />
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+      <Text fill="WHITE" layoutX="623.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify " wrappingWidth="396.13671875">
+         <font>
+            <Font name="System Bold Italic" size="96.0" />
+         </font>
+      </Text>
+      <Text fill="#f6ff00" layoutX="865.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store" wrappingWidth="425.13671875">
+         <font>
+            <Font name="System Bold Italic" size="96.0" />
+         </font>
+      </Text>
+      <Circle fill="WHITE" layoutX="856.0" layoutY="191.0" radius="121.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="856.0" layoutY="191.0" radius="106.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="WHITE" layoutX="781.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify" wrappingWidth="128.693359375">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="#ffea00" layoutX="845.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store" wrappingWidth="145.60000000000002">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="786.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="139.4384765625">
+         <font>
+            <Font name="Kristen ITC" size="96.0" />
+         </font>
+      </Text>
+   </AnchorPane>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.employee.EmployeeDashboardDetailFormController">
+   <top>
+       <AnchorPane prefHeight="75.0" prefWidth="1030.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="14.0">
+              <font>
+                  <Font name="Eras Bold ITC" size="36.0" />
+              </font>
+           </Text>
+           <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="256.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="735.4000000000001" AnchorPane.topAnchor="18.0">
+               <Image url="@../../img/admin/dashboard/Male User Icon.png" />
+           </ImageView>
+       </AnchorPane>
+   </top>
+   <center>
+       <AnchorPane prefHeight="695.0" prefWidth="1030.0" BorderPane.alignment="CENTER">
+           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" AnchorPane.leftAnchor="666.0" AnchorPane.topAnchor="14.5">
+              <font>
+                  <Font size="16.0" />
+              </font>
+           </Text>
+           <Text fx:id="txtDate" layoutX="720.0" layoutY="29.96875" strokeType="OUTSIDE" strokeWidth="0.0" text="06-10-2024" AnchorPane.topAnchor="14.5">
+              <font>
+                  <Font size="16.0" />
+              </font>
+           </Text>
+           <Text layoutX="854.0" layoutY="29.96875" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :" AnchorPane.topAnchor="14.5">
+              <font>
+                  <Font size="16.0" />
+              </font>
+           </Text>
+           <Text fx:id="txtTime" layoutX="910.0" layoutY="29.96875" strokeType="OUTSIDE" strokeWidth="0.0" text="04:12:43" AnchorPane.topAnchor="14.5">
+              <font>
+                  <Font size="16.0" />
+              </font>
+           </Text>
+           <Text layoutX="57.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome " AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="340.1015625">
+              <font>
+                  <Font size="24.0" />
+              </font>
+           </Text>
+           <Text fx:id="txtEmployeeName" layoutX="170.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name !" AnchorPane.topAnchor="341.1015625">
+              <font>
+                  <Font size="24.0" />
+              </font>
+           </Text>
+           <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#fbff0066" height="120.0" layoutX="54.0" layoutY="393.0" stroke="#00000066" strokeType="INSIDE" width="200.0" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="393.0" />
+           <Text fill="#000000cc" layoutX="89.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Earning" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="402.576171875">
+              <font>
+                  <Font size="18.0" />
+              </font>
+           </Text>
+           <Text fx:id="txtTotalEarning" layoutX="82.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 74945" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="433.78515625">
+              <font>
+                  <Font size="28.0" />
+              </font>
+           </Text>
+           <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#fffb0066" height="120.0" layoutX="287.0" layoutY="393.0" stroke="#00000066" strokeType="INSIDE" width="200.0" AnchorPane.leftAnchor="287.0" AnchorPane.topAnchor="393.0" />
+           <Text fill="#000000cc" layoutX="323.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of Customers" AnchorPane.leftAnchor="323.0" AnchorPane.topAnchor="401.576171875">
+              <font>
+                  <Font size="18.0" />
+              </font>
+           </Text>
+           <Text fx:id="txtNoOfCustomers" layoutX="357.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3578" AnchorPane.leftAnchor="357.0" AnchorPane.topAnchor="433.78515625">
+              <font>
+                  <Font size="28.0" />
+              </font>
+           </Text>
+           <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#f6ff0066" height="120.0" layoutX="163.0" layoutY="538.0" stroke="#00000066" strokeType="INSIDE" width="200.0" AnchorPane.leftAnchor="163.0" AnchorPane.topAnchor="538.0" />
+           <Text fill="#000000cc" layoutX="206.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Stocks" AnchorPane.leftAnchor="206.0" AnchorPane.topAnchor="546.576171875">
+              <font>
+                  <Font size="18.0" />
+              </font>
+           </Text>
+           <Text fx:id="txtTotalStock" layoutX="231.0" layoutY="609.0" strokeType="OUTSIDE" strokeWidth="0.0" text="475" AnchorPane.leftAnchor="231.0" AnchorPane.topAnchor="578.78515625">
+              <font>
+                  <Font size="28.0" />
+              </font>
+           </Text>
+           <LineChart fx:id="chart" layoutX="504.0" layoutY="372.0" prefHeight="289.0" prefWidth="500.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="372.0">
+              <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                  <NumberAxis side="LEFT" />
+              </yAxis>
+           </LineChart>
+           <Text fill="#000000cc" layoutX="48.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recent Orders" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="19.1015625">
+              <font>
+                  <Font size="24.0" />
+              </font>
+           </Text>
+           <TableView fx:id="tblRecentOrder" layoutX="46.0" layoutY="69.0" prefHeight="260.0" prefWidth="950.0" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="69.0">
+              <columns>
+                  <TableColumn fx:id="colOrderId" prefWidth="75.0" text="Order ID" />
+                  <TableColumn fx:id="colDate" prefWidth="107.8787841796875" text="Date" />
+                  <TableColumn fx:id="colTotal" prefWidth="92.39775085449219" text="Total" />
+                  <TableColumn fx:id="colCustomerName" prefWidth="143.73861694335938" text="Customer Name" />
+                  <TableColumn fx:id="colContact" prefWidth="144.26141357421875" text="Contact" />
+                  <TableColumn fx:id="colEmail" prefWidth="236.4205322265625" text="Email" />
+                  <TableColumn fx:id="colEmployee" prefWidth="147.34466552734375" text="Employee" />
+              </columns>
+           </TableView>
+       </AnchorPane>
+   </center>
+</BorderPane>

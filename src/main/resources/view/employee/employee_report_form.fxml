@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.employee.EmployeeReportFormController">
+   <top>
+      <AnchorPane prefHeight="75.0" prefWidth="1030.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+         <Text layoutX="50.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" wrappingWidth="201.484375" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="7.51953125">
+            <font>
+               <Font name="Cooper Black" size="44.0" />
+            </font>
+         </Text>
+         <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="239.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="749.0" AnchorPane.topAnchor="12.0">
+            <Image url="@../../img/admin/dashboard/Male User Icon.png" />
+         </ImageView>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="695.0" prefWidth="1030.0" BorderPane.alignment="CENTER">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" AnchorPane.leftAnchor="666.0" AnchorPane.topAnchor="14.5">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <Text fx:id="txtDate" layoutX="720.0" layoutY="29.96875" strokeType="OUTSIDE" strokeWidth="0.0" text="06-10-2024" AnchorPane.topAnchor="14.5">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <Text layoutX="856.0" layoutY="29.96875" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :" AnchorPane.topAnchor="14.5">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <Text fx:id="txtTime" layoutX="910.0" layoutY="29.96875" strokeType="OUTSIDE" strokeWidth="0.0" text="04:12:43" AnchorPane.topAnchor="14.5">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Text>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffe50066" height="200.0" layoutX="31.0" layoutY="402.0" stroke="WHITE" strokeType="INSIDE" width="584.0" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="402.0" />
+         <Text layoutX="111.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="427.576171875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <DatePicker fx:id="date" layoutX="207.0" layoutY="427.0" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="427.0" />
+         <Text layoutX="59.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Count :" AnchorPane.leftAnchor="59.0" AnchorPane.topAnchor="468.576171875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Text layoutX="107.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales  :" AnchorPane.leftAnchor="107.0" AnchorPane.topAnchor="517.576171875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Label fx:id="lblSalesCount" alignment="CENTER" layoutX="205.0" layoutY="513.0" prefHeight="33.0" prefWidth="157.0" text="450" textAlignment="CENTER" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="513.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="lblSales" alignment="CENTER" layoutX="205.0" layoutY="464.0" prefHeight="33.0" prefWidth="157.0" text="450" textAlignment="CENTER" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="464.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <JFXButton layoutX="656.0" layoutY="348.0" onAction="#btnPrintAnInventoryReportOnAction" prefHeight="66.0" prefWidth="218.0" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Print an Inventory Report" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="348.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <JFXButton layoutX="658.0" layoutY="213.0" onAction="#btnPrintAnEmployeeReportsOnAction" prefHeight="67.0" prefWidth="221.0" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Print an Employee Report" AnchorPane.rightAnchor="151.0" AnchorPane.topAnchor="213.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <JFXButton layoutX="654.0" layoutY="81.0" onAction="#btnPrintAnSupplierReportsOnAction" prefHeight="65.0" prefWidth="220.0" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Print an Supplier Report" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="81.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <JFXButton layoutX="658.0" layoutY="482.0" onAction="#btnDailyReturns" prefHeight="62.0" prefWidth="218.0" style="-fx-background-color: yellow; -fx-background-radius: 38px;" text="Daily Returns" AnchorPane.rightAnchor="154.0" AnchorPane.topAnchor="482.0">
+            <font>
+               <Font name="System Bold" size="16.0" />
+            </font>
+         </JFXButton>
+         <LineChart fx:id="chart" layoutX="31.0" layoutY="35.0" prefHeight="354.0" prefWidth="577.0" AnchorPane.bottomAnchor="306.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="422.0">
+            <xAxis>
+               <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+               <NumberAxis side="LEFT" />
+            </yAxis>
+         </LineChart>
+      </AnchorPane>
+   </center>
+</BorderPane>
